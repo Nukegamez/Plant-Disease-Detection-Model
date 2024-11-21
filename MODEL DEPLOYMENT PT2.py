@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 
 
-model = tensorflow.keras.models.load_model('C:/Users/Nukegamez/Desktop/test/my_model.keras', compile=False)
+model = tensorflow.keras.models.load_model('#insert the path to .keras model', compile=False)
 
 @app.route('/', methods=['POST'])
 def upload_file():
